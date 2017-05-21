@@ -171,33 +171,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>HTML与XHTML——二者有什么区别<br>区别：<br>     XHTML 元素必须被正确地嵌套<br>     XHTML 元素必须被关闭，空标签也必须被关闭，如 <br> 必须写成 <br><br>     XHTML 标签名必须用小写字母<br>     XHTML 文档必须拥有根元素<br>     XHTML 文档要求给所有属性赋一个值<br>     XHTML 要求所有的属性必须用引号””括起来<br>     XHTML 文档需要把所有 &lt; 、&gt;、&amp; 等特殊符号用编码表示<br>     XHTML 文档不要在注释内容中使“–”<br>     XHTML 图片必须有说明文字<br>     XHTML 文档中用id属性代替name属性</p>
-<p> 代码</p>
+        <p>HTML与XHTML——二者有什么区别</p>
+<pre><code>XHTML 元素必须被正确地嵌套
+XHTML 元素必须被关闭，空标签也必须被关闭，如 &lt;br&gt; 必须写成 &lt;br /&gt;
+XHTML 标签名必须用小写字母
+XHTML 文档必须拥有根元素
+XHTML 文档要求给所有属性赋一个值
+XHTML 要求所有的属性必须用引号&quot;&quot;括起来
+XHTML 文档需要把所有 &lt; 、&gt;、&amp; 等特殊符号用编码表示
+XHTML 文档不要在注释内容中使“--”
+XHTML 图片必须有说明文字
+XHTML 文档中用id属性代替name属性
+</code></pre><p> 代码</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Backbone Demo&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;title&gt;Backbone Demo&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-&lt;h1&gt;Backbone Routing Demo&lt;/h1&gt;
+    &lt;h1&gt;Backbone Routing Demo&lt;/h1&gt;
 
-  &lt;ul id=&quot;menu&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Index&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#show/1&quot;&gt;Show&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#download/1&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#search/1&quot;&gt;Search&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#other&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+      &lt;ul id=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Index&lt;/a&gt;&lt;&gt;
+        &lt;li&gt;&lt;a href=&quot;#show/1&quot;&gt;Show&lt;/a&gt;&lt;&gt;
+        &lt;li&gt;&lt;a href=&quot;#download/1&quot;&gt;Download&lt;/a&gt;&lt;&gt;
+        &lt;li&gt;&lt;a href=&quot;#search/1&quot;&gt;Search&lt;/a&gt;&lt;&gt;
+        &lt;li&gt;&lt;a href=&quot;#other&quot;&gt;Other&lt;/a&gt;&lt;&gt;
+      &lt;/ul&gt;
 
-&lt;script src=&quot;js/underscore.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;js/backbone.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/underscore.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/backbone.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;
 </code></pre>
       
 
